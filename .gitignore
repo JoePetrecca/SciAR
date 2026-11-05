@@ -222,3 +222,6 @@ __marimo__/
 NASA_ADS_UNIFIED
 
 data
+
+# Generated model adapters and training outputs
+3_train/outputs/

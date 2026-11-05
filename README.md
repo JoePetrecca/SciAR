@@ -4,12 +4,13 @@ Scientific authorship representation and verification using paper titles and abs
 
 ## Current progress
 
-The repository currently contains data exploration and dataset-building notebooks. Model training and evaluation are the next stages.
+The repository contains data exploration, dataset-building, and an initial BERT LoRA training notebook.
 
 | Notebook | Purpose |
 | --- | --- |
 | `data_analysis.ipynb` | Explore corpus size, first-author ORCID coverage, papers per author, and title/abstract lengths. |
 | `build_dataset.ipynb` | Filter, validate, deduplicate, and export a fixed working dataset. |
+| `3_train/train_lora.ipynb` | Train BERT LoRA embeddings on author-disjoint same-/different-author paper pairs. |
 
 ## Data
 
@@ -43,4 +44,4 @@ Existing output directories are protected against overwriting. Use a new version
 
 ## Next steps
 
-Assign authors to disjoint training, validation, and test sets before generating pairs. Balance same-author and different-author examples within each split. Only title and abstract text will enter the text encoder; names and ORCIDs are metadata and labels.
+Run the training notebook using the instructions in [`3_train/README.md`](3_train/README.md). It assigns authors to disjoint training, validation, and test sets before sampling balanced pairs. Only title and abstract text enter the text encoder; names and ORCIDs are metadata and labels. Follow up with topic-controlled evaluation to assess style sensitivity beyond research-topic similarity.
