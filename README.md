@@ -11,6 +11,7 @@ The repository contains data exploration, dataset-building, and an initial BERT 
 | `data_analysis.ipynb` | Explore corpus size, first-author ORCID coverage, papers per author, and title/abstract lengths. |
 | `build_dataset.ipynb` | Filter, validate, deduplicate, and export a fixed working dataset. |
 | `3_train/train_lora.ipynb` | Train BERT LoRA embeddings on author-disjoint same-/different-author paper pairs. |
+| `4_evaluation/evaluation.ipynb` | Visualize a completed run and evaluate its saved adapter on validation and test pairs. |
 
 ## Data
 
@@ -45,3 +46,5 @@ Existing output directories are protected against overwriting. Use a new version
 ## Next steps
 
 Run the training notebook using the instructions in [`3_train/README.md`](3_train/README.md). It assigns authors to disjoint training, validation, and test sets before sampling balanced pairs. Only title and abstract text enter the text encoder; names and ORCIDs are metadata and labels. Follow up with topic-controlled evaluation to assess style sensitivity beyond research-topic similarity.
+
+Evaluate a completed run with [`4_evaluation/evaluation.ipynb`](4_evaluation/README.md).
