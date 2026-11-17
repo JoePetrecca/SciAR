@@ -225,3 +225,6 @@ data
 
 # Generated model adapters and training outputs
 3_train/outputs/
+
+# Keep the studies cache placeholder; generated files are ignored locally.
+!5_studies/data/

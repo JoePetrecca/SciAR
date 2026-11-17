@@ -1,0 +1,7 @@
+{
+  "bert": {"checkpoint": "bert-base-uncased", "targets": ["query", "value"], "modules_per_layer": 2},
+  "scibert": {"checkpoint": "allenai/scibert_scivocab_uncased", "targets": ["query", "value"], "modules_per_layer": 2},
+  "roberta": {"checkpoint": "roberta-base", "targets": ["query", "value"], "modules_per_layer": 2},
+  "specter": {"checkpoint": "allenai/specter", "targets": ["query", "value"], "modules_per_layer": 2},
+  "modernbert": {"checkpoint": "answerdotai/ModernBERT-base", "targets": ["Wqkv"], "modules_per_layer": 1}
+}
