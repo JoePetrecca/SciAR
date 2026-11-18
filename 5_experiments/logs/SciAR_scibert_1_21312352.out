@@ -49,3 +49,21 @@ test: 10,000 pairs
 trainable params: 294,912 || all params: 109,622,784 || trainable%: 0.2690
 Before training: validation loss=0.3883, AUC=0.6819
 {'epoch': 1, 'train_loss': 0.28018700676721336, 'val_loss': 0.26541830315589904, 'val_auc': 0.7804819199999999}
+{'epoch': 2, 'train_loss': 0.26637942862904074, 'val_loss': 0.2710586479857564, 'val_auc': 0.75346472}
+{'epoch': 3, 'train_loss': 0.2594547298306823, 'val_loss': 0.260697595359385, 'val_auc': 0.7653257199999999}
+{'epoch': 4, 'train_loss': 0.2548150322266221, 'val_loss': 0.25953898331671954, 'val_auc': 0.7713655799999999}
+{'epoch': 5, 'train_loss': 0.25172166408246754, 'val_loss': 0.2534730074554682, 'val_auc': 0.78022738}
+{'epoch': 6, 'train_loss': 0.24880314565485717, 'val_loss': 0.255663826008141, 'val_auc': 0.7703008}
+{'epoch': 7, 'train_loss': 0.2471308107573986, 'val_loss': 0.25455029524564743, 'val_auc': 0.7782624200000001}
+{
+  "baseline_val_auc": 0.68189458,
+  "best_epoch": 1,
+  "baseline_test_auc": 0.6882158599999999,
+  "val_auc": 0.7804819199999999,
+  "val_accuracy": 0.709,
+  "threshold": 0.6240487098693848,
+  "test_loss": 0.26531483644247056,
+  "test_auc": 0.7795390200000001,
+  "test_accuracy": 0.704
+}
+Saved to /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_scibert_1

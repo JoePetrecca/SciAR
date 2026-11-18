@@ -1,0 +1,2 @@
+-r ../3_train/requirements.txt
+optuna>=4,<5

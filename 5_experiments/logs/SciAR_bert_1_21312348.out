@@ -48,3 +48,8 @@ validation: 10,000 pairs
 test: 10,000 pairs
 trainable params: 294,912 || all params: 109,186,560 || trainable%: 0.2701
 Before training: validation loss=0.3924, AUC=0.6317
+{'epoch': 1, 'train_loss': 0.30952685037004946, 'val_loss': 0.2899788441807032, 'val_auc': 0.7496855199999999}
+{'epoch': 2, 'train_loss': 0.2901235486680269, 'val_loss': 0.27678842081427574, 'val_auc': 0.7650546}
+{'epoch': 3, 'train_loss': 0.28068384400606156, 'val_loss': 0.27947320043444634, 'val_auc': 0.75057396}
+{'epoch': 4, 'train_loss': 0.2745718771103621, 'val_loss': 0.27324779605269434, 'val_auc': 0.76140356}
+{'epoch': 5, 'train_loss': 0.2705854547956586, 'val_loss': 0.2776865324854851, 'val_auc': 0.7514725}
