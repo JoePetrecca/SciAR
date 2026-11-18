@@ -1,0 +1,7 @@
+allenai/scibert_scivocab_uncased
+Device: cuda | Mixed precision: True | Output: /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_scibert_3
+Duplicate-work filter: {'input_papers': 679721, 'retained_papers': 672677, 'conflicting_author_papers_removed': 1139, 'duplicate_papers_removed': 5905}
+train: 178,295 authors, 537,937 papers
+validation: 22,286 authors, 67,832 papers
+test: 22,288 authors, 66,908 papers
+Using SPECTER cache: /mnt/ufs18/rs/deepthought/SciAR/SciAR/data/cache/specter/ecd7ba273e058bb1050f392d845bcb993e8152453673ff549e911eb884afa789.npy

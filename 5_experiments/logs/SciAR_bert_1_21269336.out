@@ -1,0 +1,7 @@
+google-bert/bert-base-uncased
+Device: cuda | Mixed precision: True | Output: /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_bert_1
+Duplicate-work filter: {'input_papers': 679721, 'retained_papers': 672677, 'conflicting_author_papers_removed': 1139, 'duplicate_papers_removed': 5905}
+train: 178,295 authors, 537,682 papers
+validation: 22,286 authors, 67,794 papers
+test: 22,288 authors, 67,201 papers
+Using SPECTER cache: /mnt/ufs18/rs/deepthought/SciAR/SciAR/data/cache/specter/ecd7ba273e058bb1050f392d845bcb993e8152453673ff549e911eb884afa789.npy

@@ -1,0 +1,21 @@
+/mnt/ffs24/home/petrecc1/miniforge3/envs/SciARvenv/lib/python3.11/site-packages/torch/cuda/__init__.py:497: UserWarning: Found GPU0 Tesla V100-SXM2-32GB which is of compute capability (CC) 7.0.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0
+- 8.6 which supports hardware CC >=8.6,<9.0
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.15.0+cu132 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+Traceback (most recent call last):
+  File "/mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/train_lora.py", line 128, in <module>
+    pair_sets[name] = specter_reader.make_matched_pairs(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ufs18/rs/deepthought/SciAR/SciAR/2_Data/specter_reader.py", line 146, in make_matched_pairs
+    excluded[list(reserved_anchors)] = True
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+

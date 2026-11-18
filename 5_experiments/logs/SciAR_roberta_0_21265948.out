@@ -1,0 +1,49 @@
+FacebookAI/roberta-base
+Device: cuda | Mixed precision: True | Output: /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_roberta_0
+Duplicate-work filter: {'input_papers': 679721, 'retained_papers': 672677, 'conflicting_author_papers_removed': 1139, 'duplicate_papers_removed': 5905}
+train: 178,295 authors, 538,623 papers
+validation: 22,286 authors, 66,954 papers
+test: 22,288 authors, 67,100 papers
+Using SPECTER cache: /mnt/ufs18/rs/deepthought/SciAR/SciAR/data/cache/specter/ecd7ba273e058bb1050f392d845bcb993e8152453673ff549e911eb884afa789.npy
+Selected 250,000 pairs, 325,702 papers, 154,614 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.355284  0.789601  0.850991  0.894666  0.981477
+1      0.355284  0.789621  0.852528  0.901226  0.994604
+Absolute positive/negative similarity gap: median=0.0000, 95th percentile=0.0301, max=0.1860
+Selected 10,000 pairs, 14,379 papers, 8,595 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.419706  0.790450  0.847872  0.887467  0.972198
+1      0.419706  0.791097  0.853098  0.901161  0.991353
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0513, max=0.2071
+Selected 10,000 pairs, 14,372 papers, 8,553 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.436812  0.788555  0.847829  0.887028  0.958133
+1      0.436810  0.789461  0.853076  0.900665  0.985202
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0498, max=0.1668
+train: 250,000 pairs
+validation: 10,000 pairs
+test: 10,000 pairs
+trainable params: 294,912 || all params: 124,349,952 || trainable%: 0.2372
+Before training: validation loss=0.3986, AUC=0.6016
+{'epoch': 1, 'train_loss': 0.3175964556181431, 'val_loss': 0.2855272141695023, 'val_auc': 0.7464129399999999}
+{'epoch': 2, 'train_loss': 0.29161656265383956, 'val_loss': 0.27512042212486265, 'val_auc': 0.76396038}
+{'epoch': 3, 'train_loss': 0.28231294814991953, 'val_loss': 0.2749384756579995, 'val_auc': 0.76283652}
+{'epoch': 4, 'train_loss': 0.2764778237188458, 'val_loss': 0.2677299584940076, 'val_auc': 0.76657264}
+{'epoch': 5, 'train_loss': 0.2715489350553155, 'val_loss': 0.2772932256937027, 'val_auc': 0.73966686}
+{'epoch': 6, 'train_loss': 0.26789382576948406, 'val_loss': 0.2716159230738878, 'val_auc': 0.7560369}
+{'epoch': 7, 'train_loss': 0.26512127513593436, 'val_loss': 0.2736460771501064, 'val_auc': 0.74457994}
+{
+  "baseline_val_auc": 0.6016311,
+  "best_epoch": 4,
+  "baseline_test_auc": 0.60741372,
+  "val_auc": 0.76657264,
+  "val_accuracy": 0.698,
+  "threshold": 0.49940359592437744,
+  "test_loss": 0.2711153587043285,
+  "test_auc": 0.76167484,
+  "test_accuracy": 0.6914
+}
+Saved to /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_roberta_0
