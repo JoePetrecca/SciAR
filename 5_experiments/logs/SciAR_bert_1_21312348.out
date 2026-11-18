@@ -1,0 +1,50 @@
+Wed Nov 18 09:37:15 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-SXM2-32GB           On  |   00000000:3B:00.0 Off |                    0 |
+| N/A   37C    P0             42W /  300W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+google-bert/bert-base-uncased
+Device: cuda | Mixed precision: True | Output: /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_bert_1
+Duplicate-work filter: {'input_papers': 679721, 'retained_papers': 672677, 'conflicting_author_papers_removed': 1139, 'duplicate_papers_removed': 5905}
+train: 178,295 authors, 537,682 papers
+validation: 22,286 authors, 67,794 papers
+test: 22,288 authors, 67,201 papers
+Using SPECTER cache: /mnt/ufs18/rs/deepthought/SciAR/SciAR/data/cache/specter/ecd7ba273e058bb1050f392d845bcb993e8152453673ff549e911eb884afa789.npy
+Selected 250,000 pairs, 325,819 papers, 154,455 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.370395  0.790119  0.851890  0.894944  0.985736
+1      0.370396  0.790200  0.853353  0.901493  0.994604
+Absolute positive/negative similarity gap: median=0.0000, 95th percentile=0.0301, max=0.1603
+Selected 10,000 pairs, 14,410 papers, 8,574 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.432714  0.793649  0.848571  0.887305  0.965972
+1      0.432705  0.794620  0.854216  0.900568  0.989330
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0532, max=0.1860
+Selected 10,000 pairs, 14,418 papers, 8,593 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.444447  0.792413  0.851467  0.889187  0.968487
+1      0.444448  0.793345  0.856720  0.903777  0.990059
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0513, max=0.1783
+train: 250,000 pairs
+validation: 10,000 pairs
+test: 10,000 pairs
+trainable params: 294,912 || all params: 109,186,560 || trainable%: 0.2701
+Before training: validation loss=0.3924, AUC=0.6317

@@ -11,7 +11,7 @@ MODELS = {
     "simcse": "princeton-nlp/sup-simcse-bert-base-uncased",
 }
 
-RUNS_PER_MODEL = 4
+RUNS_PER_MODEL = 5
 PROJECT_DIR = Path("/mnt/ufs18/rs/deepthought/SciAR/SciAR")
 SBATCH_DIR = PROJECT_DIR / "5_experiments" / "sbatch"
 LOG_DIR = PROJECT_DIR / "5_experiments" / "logs"
@@ -31,16 +31,25 @@ for short_name, model_name in MODELS.items():
 #SBATCH --error={LOG_DIR}/{run_name}_%j.err
 #SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:1
+#SBATCH --gpus=1
 #SBATCH --mem=48G
 #SBATCH --mail-user=petrecc1@msu.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 
+source ~/.bashrc
+
+module purge
+unset PYTHONPATH
+export PYTHONNOUSERSITE=1
+
+mamba activate SciARcuda
+
 set -euo pipefail
 
 cd {PROJECT_DIR}
-source ~/.bashrc
-mamba activate SciARvenv
+
+# Log GPU information
+nvidia-smi
 
 python3 5_experiments/train_lora.py \\
     "{model_name}" \\
