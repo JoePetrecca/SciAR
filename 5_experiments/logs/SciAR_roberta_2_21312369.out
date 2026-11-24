@@ -1,0 +1,69 @@
+Fri Nov 20 01:36:08 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100S-PCIE-32GB          On  |   00000000:3D:00.0 Off |                    0 |
+| N/A   30C    P0             24W /  250W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+FacebookAI/roberta-base
+Device: cuda | Mixed precision: True | Output: /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_roberta_2
+Duplicate-work filter: {'input_papers': 679721, 'retained_papers': 672677, 'conflicting_author_papers_removed': 1139, 'duplicate_papers_removed': 5905}
+train: 178,295 authors, 538,195 papers
+validation: 22,286 authors, 67,341 papers
+test: 22,288 authors, 67,141 papers
+Using SPECTER cache: /mnt/ufs18/rs/deepthought/SciAR/SciAR/data/cache/specter/ecd7ba273e058bb1050f392d845bcb993e8152453673ff549e911eb884afa789.npy
+Selected 250,000 pairs, 325,647 papers, 154,555 authors
+          0.00      0.25      0.50      0.75      1.00
+label                                                 
+0      0.37399  0.789962  0.851670  0.894874  0.983884
+1      0.37399  0.790020  0.853108  0.901372  0.996855
+Absolute positive/negative similarity gap: median=0.0000, 95th percentile=0.0296, max=0.2087
+Selected 10,000 pairs, 14,393 papers, 8,575 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.371064  0.787346  0.847932  0.889035  0.964843
+1      0.371066  0.787556  0.853660  0.902587  0.993017
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0510, max=0.1439
+Selected 10,000 pairs, 14,362 papers, 8,524 authors
+           0.00      0.25      0.50      0.75      1.00
+label                                                  
+0      0.456807  0.787027  0.847610  0.888185  0.971179
+1      0.456807  0.788214  0.852333  0.901048  0.991995
+Absolute positive/negative similarity gap: median=0.0002, 95th percentile=0.0505, max=0.1882
+train: 250,000 pairs
+validation: 10,000 pairs
+test: 10,000 pairs
+trainable params: 294,912 || all params: 124,349,952 || trainable%: 0.2372
+Before training: validation loss=0.3986, AUC=0.6028
+{'epoch': 1, 'train_loss': 0.3112879917205572, 'val_loss': 0.290729078528285, 'val_auc': 0.7304534199999999}
+{'epoch': 2, 'train_loss': 0.2914609828616381, 'val_loss': 0.30427172147482634, 'val_auc': 0.6894081599999999}
+{'epoch': 3, 'train_loss': 0.2833921811864376, 'val_loss': 0.2960794228196144, 'val_auc': 0.7060499600000001}
+{'epoch': 4, 'train_loss': 0.2775555915632248, 'val_loss': 0.2812925806760788, 'val_auc': 0.73353624}
+{'epoch': 5, 'train_loss': 0.2732235101636648, 'val_loss': 0.27518891128599643, 'val_auc': 0.75655264}
+{'epoch': 6, 'train_loss': 0.2695327473514676, 'val_loss': 0.27392976672649383, 'val_auc': 0.7481808799999999}
+{'epoch': 7, 'train_loss': 0.26635288713783023, 'val_loss': 0.2774313920840621, 'val_auc': 0.74152204}
+{
+  "baseline_val_auc": 0.60276866,
+  "best_epoch": 5,
+  "baseline_test_auc": 0.60071652,
+  "val_auc": 0.75655264,
+  "val_accuracy": 0.6884,
+  "threshold": 0.5412763357162476,
+  "test_loss": 0.27306467102319004,
+  "test_auc": 0.76070272,
+  "test_accuracy": 0.6906
+}
+Saved to /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_roberta_2

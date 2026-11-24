@@ -53,3 +53,17 @@ Before training: validation loss=0.3924, AUC=0.6317
 {'epoch': 3, 'train_loss': 0.28068384400606156, 'val_loss': 0.27947320043444634, 'val_auc': 0.75057396}
 {'epoch': 4, 'train_loss': 0.2745718771103621, 'val_loss': 0.27324779605269434, 'val_auc': 0.76140356}
 {'epoch': 5, 'train_loss': 0.2705854547956586, 'val_loss': 0.2776865324854851, 'val_auc': 0.7514725}
+{'epoch': 6, 'train_loss': 0.26723253796982765, 'val_loss': 0.2727826759368181, 'val_auc': 0.75918692}
+{'epoch': 7, 'train_loss': 0.2646453330093026, 'val_loss': 0.26732167123258116, 'val_auc': 0.7655790400000001}
+{
+  "baseline_val_auc": 0.6316841799999999,
+  "best_epoch": 7,
+  "baseline_test_auc": 0.6433403200000001,
+  "val_auc": 0.7655790400000001,
+  "val_accuracy": 0.7004,
+  "threshold": 0.5317661166191101,
+  "test_loss": 0.26722977648973467,
+  "test_auc": 0.7636888400000001,
+  "test_accuracy": 0.7016
+}
+Saved to /mnt/ufs18/rs/deepthought/SciAR/SciAR/5_experiments/outputs/SciAR_bert_1
